@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
+
+
+.navbar-custom {
+    background-color: #bc0fcc; 
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .navbar-custom .navbar-brand img.navbar-logo {
+    height: 100px; 
+    width: auto; 
+  }
+  
+  .navbar-custom .nav-link {
+    color: #fff; 
+  }
+  
+  .navbar-custom .btn-outline-success {
+    color: #fff;
+    border-color: #fff;
+  }
+  
+  .navbar-custom .btn-outline-success:hover {
+    background-color: #fff; 
+    color: #2a2a2a; 
+  }
+  
+  .navbar-custom .nav-link {
+    color: #ffffff; 
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .navbar-custom .nav-link:hover {
+    background-color: #6dd616; 
+    color: #ffffff; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .navbar-custom .form-control {
+    margin-left: 5px;
+  }
+  
+  .container{
+    width: 100%;
+  
+  }
+  
+
+.background-div {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2; 
+  }
+  
+.img-fudo {
+    background-image: url('/flor-fundo.jpg');
+    background-size: cover;     
+    background-position: center;   
+    background-repeat: no-repeat; 
+    background-attachment: fixed;          
+    width: 100vw;
+    height: 100vh; 
+         
+}
+
+.form-box{
+    width: 300px;
+    background: #ffffff;
+    font-family: Lato;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border-top: 10px solid #fe4bb1;
+}
+
+.form-box .form-input{
+    border: none;
+    background: #eee;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-size: large;
+    margin-bottom: 10px;
+}
+
+.form-box .form-btn{
+    border: none;
+    background: #fe4bb1;
+    width: 100%;
+    height: 50px;
+    font-size: large;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+@media screen and(max-width: 340px){
+    .form-box{
+        width: 100vw;
+        height: 100vh;
+    }
+}
+
+
+

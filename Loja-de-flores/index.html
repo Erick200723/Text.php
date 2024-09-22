@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+    <link rel="icon" href="imagens/incone2.png" type="image/x-icon">
+    <title>Jardín Andino</title>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container d-flex justify-content-center">
+            <a class="navbar-brand" href="#">
+                <img src="imagens/flores.png" alt="Logo" class="navbar-logo" style="height: 50px;">
+            </a>
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Horme</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Muticor</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Diversos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="login.html">Login</a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- Primeira Seção - Carrossel de Fundo -->
+<!-- Primeira Seção - Carrossel de Fundo -->
+<section class="background-section">
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="imagens/fundo6.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="imagens/fundo5.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="imagens/fundo3.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+  </div>
+  <!-- Conteúdo sobreposto ao carrossel -->
+  <div class="overlay-content">
+    <div class="card text-center">
+      <div class="card-body">
+        <h5 class="card-title"> Bem-vindo ao Jardín Ardino</h5>
+        <p class="card-text">"Bem-vindo ao Jardín Andino! Explore a beleza e a diversidade das<br> flores mais encantadoras, cuidadosamente cultivadas <br> para trazer frescor e alegria à sua vida.<br> Sinta-se em casa em nosso oásis de cores e fragrâncias!".</p>
+        <a href="#" class="btn btn-primary">Saiba mais</a>
+      </div>
+      <div class="card-footer text-body-secondary">
+        © 2024 Jardín Andino. Todos os direitos reservados
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Segunda Seção - Imagens de Flores -->
+    <section class="image-section">
+        <div class="container">
+            <div class="row">
+                <div class="card-group">
+                    <div class="card m-4">
+                      <img src="imagens/mercadoria 1.jpg" class="card-img-top1" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Buque de flores do campo</h5>
+                        <p class="card-text">
+                            "Buquê de Flores do Campo: uma explosão de cores vibrantes e fragrâncias naturais, perfeito para transmitir alegria e frescor em qualquer ocasião. Leve a beleza dos campos para quem você ama!".</p>
+                        <button onclick="compra()" type="button" class="btn btn-outline-primary m-4 " style="align-self:end;">R$ 80,00</button>
+                      </div>
+                      <div class="card-footer">
+                        <small class="text-body-secondary">Last updated 3 mins ago</small>
+                      </div>
+                    </div>
+                    <div class="card m-4">
+                      <img src="imagens/mercadoria2.jpg" class="card-img-top2" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Rosas colombianas</h5>
+                        <p class="card-text">"Buquê de Rosas Colombianas e Flores do Campo: a elegância das rosas colombianas combinada com o charme rústico das flores silvestres. Um arranjo perfeito para encantar com beleza, sofisticação e frescor!</p>
+                        <button onclick="compra()" type="button" class="btn btn-outline-primary m-2 "style="align-self:end;">R$ 150,00</button>
+                      </div>
+                      <div class="card-footer">
+                        <small class="text-body-secondary">Last updated 3 mins ago</small>
+                      </div>
+                    </div>
+                    <div class="card m-4">
+                      <img src="imagens/mercadoria3.jpg" class="card-img-top3" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Buque de flores mistas</h5>
+                        <p class="card-text">"Buquê de Flores Mistas: uma combinação harmoniosa de flores elegantes e coloridas, perfeita para surpreender em qualquer ocasião. Um presente que expressa carinho e alegria com beleza e diversidade!"</p>
+                        <button onclick="compra()" type="button" class="btn btn-outline-primary m-2"style="align-self:end;">R$ 100,00</button>
+                      </div>
+                      <div class="card-footer">
+                        <small class="text-body-secondary">Last updated 3 mins ago</small>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="form-container" id="formContainer">
+              <h2>Formulário de Compra</h2>
+              <form id="contactForm">
+                  <div class="form-group">
+                      <label for="name">Nome:</label>
+                      <input type="text" id="name" name="name" required>
+                  </div>
+      
+                  <div class="form-group">
+                      <label for="email">E-mail:</label>
+                      <input type="email" id="email" name="email" required>
+                  </div>
+      
+                  <div class="form-group">
+                      <label for="password">valor do produto:</label>
+                      <input type="number" id="password" name="password" required>
+                  </div>
+      
+                  <div class="form-group">
+                      <label for="message">Quantidade:</label>
+                      <textarea id="number" name="message" rows="4" required></textarea>
+                  </div>
+      
+                  <div class="form-group">
+                      <button onclick="submit()">Enviar</button>
+                  </div>
+      
+                  <div class="form-group">
+                      <button type="button" class="clear-btn" onclick="clearForm()">Limpar</button>
+                  </div>
+              </form>
+          </div>
+        </div>
+    </section>
+
+    <!-- Terceira Seção - Texto adicional -->
+    <footer class="footer bg-dark text-center text-white py-3">
+      <div class="container">
+        <p class="mb-0">© 2024 Jardín Andino. Todos os direitos reservados.</p>
+        <p class="mb-0">Desenvolvido por Jardín Andino.</p>
+      </div>
+    </footer>
+
+</body>
+</html>

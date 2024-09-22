@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: #fe4bb1;
+    color: #ffffff;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    font-family: Lato;
+}
+.container{
+    width: 100w;
+    height: 100vh;
+    background: #cac7ca;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/flor-fundo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form-box{
+    width: 300px;
+    background: #ffffff;
+    font-family: Lato;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border-top: 10px solid #fe4bb1;
+}
+
+.form-box .form-input{
+    border: none;
+    background: #eee;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-size: large;
+    margin-bottom: 10px;
+}
+
+.form-box .form-btn{
+    border: none;
+    background: #fe4bb1;
+    width: 100%;
+    height: 50px;
+    font-size: large;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+@media screen and(max-width: 340px){
+    .form-box{
+        width: 100vw;
+        height: 100vh;
+    }
+}
+
+
+
